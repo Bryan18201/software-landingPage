@@ -46,7 +46,7 @@ function Navbar() {
                       <a href="#">
                         <img
                           className="h-8 w-auto "
-                          src={"/static/img/layers.png"}
+                          src={"https://cdn-icons-png.flaticon.com/128/4205/4205106.png"}
                           alt="Your Company"
                         />
                       </a>
