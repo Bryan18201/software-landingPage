@@ -308,7 +308,7 @@ export const Pricing = () => {
                 </div>
                 <div className="z-50 mt-6 rounded-lg" bis_skin_checked="1">
                   <a
-                    href="/pricing"
+                    href="#"
                     type="highlight"
                     className="w-full hover:bg-blue-600  hover:text-white items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
                   >

@@ -46,7 +46,7 @@ function Navbar() {
                       <a href="#">
                         <img
                           className="h-8 w-auto "
-                          src="/layers.png"
+                          src={"/src/assets/layers.png"}
                           alt="Your Company"
                         />
                       </a>
