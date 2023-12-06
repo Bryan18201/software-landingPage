@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Hero2.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1701701384797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701702376039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     <div className=\"max-w-xl text-center ltr:sm:text-left rtl:sm:text-right\">\r\n       <h1 className=\"text-3xl font-extrabold sm:text-5xl\">\r\n         Let us find your\r\n \r\n-        <strong className=\"block font-extrabold text-rose-700\"> Forever Home. </strong>\r\n+        <strong className=\"block font-extrabold text-white-700\"> Forever Home. </strong>\r\n       </h1>\r\n \r\n       <p className=\"mt-4 max-w-lg sm:text-xl/relaxed\">\r\n         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus\r\n"
+                },
+                {
+                    "date": 1701702394125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,43 @@\n+\r\n+const Hero2 = () => {\r\n+  return (\r\n+    <div>\r\n+        <>{ /*\r\n+     Heads up! 👋\r\n+   \r\n+     This component comes with some `rtl` classes. Please remove them if they are not needed in your project.\r\n+   */ }\r\n+\r\n+<section className=\"relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat\">\r\n+  <div className=\"absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l\" />\r\n+\r\n+  <div className=\"relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8\">\r\n+    <div className=\"max-w-xl text-center ltr:sm:text-left rtl:sm:text-right\">\r\n+      <h1 className=\"text-3xl font-extrabold sm:text-5xl \">\r\n+        Let us find your\r\n+\r\n+        <strong className=\"block font-extrabold text-white\"> Forever Home. </strong>\r\n+      </h1>\r\n+\r\n+      <p className=\"mt-4 max-w-lg sm:text-xl/relaxed\">\r\n+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus\r\n+        numquam ea!\r\n+      </p>\r\n+\r\n+      <div className=\"mt-8 flex flex-wrap gap-4 text-center\">\r\n+        <a href=\"#\" className=\"block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto\">\r\n+          Get Started\r\n+        </a>\r\n+\r\n+        <a href=\"#\" className=\"block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto\">\r\n+          Learn More\r\n+        </a>\r\n+      </div>\r\n+    </div>\r\n+  </div>\r\n+</section></>\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Hero2\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1701701384797,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Hero2 = () => {\r\n  return (\r\n    <div>Hero2</div>\r\n  )\r\n}\r\n\r\nexport default Hero2"
+        }
+    ]
+}

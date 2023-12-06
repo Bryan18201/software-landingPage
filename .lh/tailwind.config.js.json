@@ -1,0 +1,162 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1701705534272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701705541228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     \"./src/**/*.{js,ts,jsx,tsx}\",\n   ],\n   theme: {\n     extend: {\n-      \n+      backgroundImage\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701705549387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n     \"./src/**/*.{js,ts,jsx,tsx}\",\n   ],\n   theme: {\n     extend: {\n-      backgroundImage\n+      backgroundImage:{\n+        \n+      }\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701705557564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   ],\n   theme: {\n     extend: {\n       backgroundImage:{\n-        \n+        'hero-image'\n       }\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701705563940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   ],\n   theme: {\n     extend: {\n       backgroundImage:{\n-        'hero-image'\n+        'hero-image': \"url\"\n       }\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701705569915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   ],\n   theme: {\n     extend: {\n       backgroundImage:{\n-        'hero-image': \"url\"\n+        'hero-image': \"url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701706276714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   ],\n   theme: {\n     extend: {\n       backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701711333275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,11 @@\n     extend: {\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n+      color:{\n+        \n+      }\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711342970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711349471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,26 +9,10 @@\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n-  },\n-  plugins: [],\n-}\n+    color:{\n \n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-      color:{\n-        \n-      }\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711417063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    colors:{\n+\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711423885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    colors:{\n+      \n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711483695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,48 +10,10 @@\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n     colors:{\n-      \n+      principal: \n     },\n   },\n   plugins: [],\n }\n \n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    colors:{\n-\n-    },\n-  },\n-  plugins: [],\n-}\n-\n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    color:{\n-\n-    },\n-  },\n-  plugins: [],\n-}\n-\n"
+                },
+                {
+                    "date": 1701711489785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n     colors:{\n-      principal: \n+      principal: \"\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711497088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n     colors:{\n-      principal: \"\n+      principal: \"#59E881\"\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711509949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n-    colors:{\n+    color:{\n       principal: \"#59E881\"\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701711529045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n     color:{\n-      principal: \"#59E881\"\n+      principal: \"#59E881\",\n+      \n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711559008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    color:{\n+      principal: \"#59E881\",\n+      dark:{\n+        \n+      }\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711565630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    color:{\n+      principal: \"#59E881\",\n+      dark:{\n+        700: \"\"\n+      }\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711574022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,53 +12,11 @@\n     },\n     color:{\n       principal: \"#59E881\",\n       dark:{\n-        700: \"\"\n+        700: \"#262335\"\n       }\n     },\n   },\n   plugins: [],\n }\n \n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    color:{\n-      principal: \"#59E881\",\n-      dark:{\n-        \n-      }\n-    },\n-  },\n-  plugins: [],\n-}\n-\n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    color:{\n-      principal: \"#59E881\",\n-      \n-    },\n-  },\n-  plugins: [],\n-}\n-\n"
+                },
+                {
+                    "date": 1701711580006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n     },\n     color:{\n       principal: \"#59E881\",\n       dark:{\n-        700: \"#262335\"\n+        700: \"#262335\",\n+        800:\n       }\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701711585205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     color:{\n       principal: \"#59E881\",\n       dark:{\n         700: \"#262335\",\n-        800:\n+        800: \"#262335\"\n       }\n     },\n   },\n   plugins: [],\n"
+                },
+                {
+                    "date": 1701711598399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     },\n     color:{\n       principal: \"#59E881\",\n       dark:{\n-        700: \"#262335\",\n+        700: \"##433E5A\",\n         800: \"#262335\"\n       }\n     },\n   },\n"
+                },
+                {
+                    "date": 1701711606395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    color:{\n+      principal: \"#59E881\",\n+      dark:{\n+        700: \"#433E5A\",\n+        800: \"#262335\"\n+      }\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711613225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,33 +14,11 @@\n       principal: \"#59E881\",\n       dark:{\n         700: \"#433E5A\",\n         800: \"#262335\"\n-      }\n+      },\n+      purple: \n     },\n   },\n   plugins: [],\n }\n \n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    color:{\n-      principal: \"#59E881\",\n-      dark:{\n-        700: \"##433E5A\",\n-        800: \"#262335\"\n-      }\n-    },\n-  },\n-  plugins: [],\n-}\n-\n"
+                },
+                {
+                    "date": 1701711623977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       dark:{\n         700: \"#433E5A\",\n         800: \"#262335\"\n       },\n-      purple: \n+      purple: \"#6D59C0\"\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711632726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n       dark:{\n         700: \"#433E5A\",\n         800: \"#262335\"\n       },\n-      purple: \"#6D59C0\"\n+      purple: \"#6D59C0\",\n+      gray: \n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701711639691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    color:{\n+      principal: \"#59E881\",\n+      dark:{\n+        700: \"#433E5A\",\n+        800: \"#262335\"\n+      },\n+      purple: \"#6D59C0\",\n+      gray: \"#DDDAE8\"\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701711758029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n-    color:{\n+    colors:{\n       principal: \"#59E881\",\n       dark:{\n         700: \"#433E5A\",\n         800: \"#262335\"\n@@ -22,29 +22,4 @@\n   },\n   plugins: [],\n }\n \n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    color:{\n-      principal: \"#59E881\",\n-      dark:{\n-        700: \"#433E5A\",\n-        800: \"#262335\"\n-      },\n-      purple: \"#6D59C0\",\n-      gray: \n-    },\n-  },\n-  plugins: [],\n-}\n-\n"
+                },
+                {
+                    "date": 1701712080891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n-    colors:{\n+    color:{\n       principal: \"#59E881\",\n       dark:{\n         700: \"#433E5A\",\n         800: \"#262335\"\n"
+                },
+                {
+                    "date": 1701712202816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+/** @type {import('tailwindcss').Config} */\n+export default {\n+  content: [\n+    \"./index.html\",\n+    \"./src/**/*.{js,ts,jsx,tsx}\",\n+  ],\n+  theme: {\n+    extend: {\n+      backgroundImage:{\n+        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n+      }\n+    },\n+    color:{\n+      principal': \"#59E881\",\n+      dark:{\n+        700: \"#433E5A\",\n+        800: \"#262335\"\n+      },\n+      purple: \"#6D59C0\",\n+      gray: \"#DDDAE8\"\n+    },\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1701712208816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n     color:{\n-      principal': \"#59E881\",\n-      dark:{\n+      'principal': \"#59E881\",\n+      'dark':{\n         700: \"#433E5A\",\n         800: \"#262335\"\n       },\n       purple: \"#6D59C0\",\n@@ -22,29 +22,4 @@\n   },\n   plugins: [],\n }\n \n-/** @type {import('tailwindcss').Config} */\n-export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n-  theme: {\n-    extend: {\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n-    },\n-    color:{\n-      principal: \"#59E881\",\n-      dark:{\n-        700: \"#433E5A\",\n-        800: \"#262335\"\n-      },\n-      purple: \"#6D59C0\",\n-      gray: \"#DDDAE8\"\n-    },\n-  },\n-  plugins: [],\n-}\n-\n"
+                },
+                {
+                    "date": 1701712216475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n       'dark':{\n         700: \"#433E5A\",\n         800: \"#262335\"\n       },\n-      purple: \"#6D59C0\",\n-      gray: \"#DDDAE8\"\n+      'purple': \"#6D59C0\",\n+      'gray': \"#DDDAE8\"\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701712278312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,9 @@\n       'dark':{\n         700: \"#433E5A\",\n         800: \"#262335\"\n       },\n-      'purple': \"#6D59C0\",\n-      'gray': \"#DDDAE8\"\n+     \n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701712286383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,16 @@\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n-    color:{\n+    colors:{\n       'principal': \"#59E881\",\n       'dark':{\n         700: \"#433E5A\",\n         800: \"#262335\"\n       },\n-     \n+      'purple': \"#6D59C0\",\n+      'gray': \"#DDDAE8\"\n     },\n   },\n   plugins: [],\n }\n"
+                },
+                {
+                    "date": 1701712459201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,17 +9,9 @@\n       backgroundImage:{\n         'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n       }\n     },\n-    colors:{\n-      'principal': \"#59E881\",\n-      'dark':{\n-        700: \"#433E5A\",\n-        800: \"#262335\"\n-      },\n-      'purple': \"#6D59C0\",\n-      'gray': \"#DDDAE8\"\n-    },\n+    \n   },\n   plugins: [],\n }\n \n"
+                },
+                {
+                    "date": 1701712465037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,22 @@\n /** @type {import('tailwindcss').Config} */\n export default {\n-  content: [\n-    \"./index.html\",\n-    \"./src/**/*.{js,ts,jsx,tsx}\",\n-  ],\n+  content: [\"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\"],\n   theme: {\n     extend: {\n-      colors:{\n-        'principal': \"#59E881\",\n-        'dark':{\n+      colors: {\n+        principal: \"#59E881\",\n+        dark: {\n           700: \"#433E5A\",\n-          800: \"#262335\"\n+          800: \"#262335\",\n         },\n-        'purple': \"#6D59C0\",\n-        'gray': \"#DDDAE8\"\n+        purple: \"#6D59C0\",\n+        gray: \"#DDDAE8\",\n       },\n-      backgroundImage:{\n-        'hero-image': \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\"\n-      }\n+      backgroundImage: {\n+        \"hero-image\":\n+          \"url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')\",\n+      },\n     },\n-    \n   },\n   plugins: [],\n-}\n-\n+};\n"
+                }
+            ],
+            "date": 1701705534272,
+            "name": "Commit-0",
+            "content": "/** @type {import('tailwindcss').Config} */\nexport default {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{js,ts,jsx,tsx}\",\n  ],\n  theme: {\n    extend: {\n      \n    },\n  },\n  plugins: [],\n}\n\n"
+        }
+    ]
+}
